@@ -50,3 +50,20 @@ window.onclick = function(event) {
         popup.style.display = 'none';
     }
 }
+
+
+// AOS
+function setAOSDurations(duration) {
+    const elements = document.querySelectorAll('.animated-box');
+    elements.forEach(el => {
+        el.setAttribute('data-aos-duration', duration);
+    });
+
+    // Reinitialize AOS to apply the new durations
+    AOS.init({
+        duration: duration // optional: global default
+    });
+}
+
+// Call the function with desired duration (in milliseconds)
+setAOSDurations(1500); // sets duration to 1.5 seconds
