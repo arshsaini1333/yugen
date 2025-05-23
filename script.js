@@ -32,3 +32,21 @@ function ocSlideCarousel() {
 }
 
 setInterval(ocSlideCarousel, 2500); // Slide every 3 seconds
+
+
+// POP UP Form
+function openPopup() {
+    document.getElementById('popup-form').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('popup-form').style.display = 'none';
+}
+
+// Optional: Close when clicking outside the popup
+window.onclick = function(event) {
+    const popup = document.getElementById('popup-form');
+    if (event.target === popup) {
+        popup.style.display = 'none';
+    }
+}

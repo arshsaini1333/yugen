@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>LA MANDRE</title>
 </head>
 
 <body>
@@ -27,12 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <div class="leftSide">
-                            <a class="nav-link active" aria-current="page" href="#">Overview</a>
-                            <a class="nav-link" href="#">Amenities</a>
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#overview">Overview</a>
+                            <a class="nav-link" href="#features">Features</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                            <a class="nav-link" href="#location">Location</a>
                         </div>
                         <div class="rightSide">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#" onclick="openPopup()">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +42,7 @@
         <div class="home-container">
             <div class="home-heading" id="homeHead">LA MANDRE</div>
             <div class="home-content" id="HomeContent">4 BHK Luxury Villas With Private Pool & Lushgreen Garden</div>
-            <div class="slide-text">Hurry Up! Only <strong>3</strong> Units Left</div>
+            <div class="slide-text" onclick="openPopup()">Hurry Up! Only <strong>3</strong> Units Left</div>
         </div>
     </div>
     <!-- OverView -->
@@ -75,13 +76,13 @@
                 </ul>
             </div>
 
-            <button class="oc-button">Book Now</button>
+            <button class="oc-button" onclick="openPopup()">Book Now</button>
         </div>
     </div>
 
 
     <!-- ----------------Features--------------- -->
-    <div class="feature-container">
+    <div class="feature-container" id="features">
         <div class="fc-head">Every Detail, Designed for Delight</div>
 
         <div class="fc-body">
@@ -132,6 +133,7 @@
                 </div>
                 <div class="fc-book">
                     <p>Spots are filling fast — book your dream villa now!</p>
+                    <button onclick="openPopup()">Click Here!</button>
                 </div>
             </div>
             <div class="grid-container">
@@ -174,8 +176,169 @@
 
     </div>
 
-    <!-- Pop UP for 3 units -->
 
+
+    <!-- -----------Gallry--------- -->
+
+    <div class="gallry" id="gallery">
+        <div class="g-heading">Explore Your Future Home Through Our Gallery</div>
+        <div class="g-body">
+            <div class="g-card">
+                <img src="./images/g1.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g2.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g3.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g4.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g5.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g6.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g7.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g8.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g9.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g10.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g11.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g12.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g13.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g14.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g15.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g16.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g17.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g18.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g19.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g20.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g21.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g22.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g23.webp" alt="gallary">
+            </div>
+            <div class="g-card">
+                <img src="./images/g24.webp" alt="gallary">
+            </div>
+            <div class="g-card g-book-card">
+                <p>Only 3 Villas Left</p>
+                <button onclick="openPopup()">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="location" id="location">
+        <div class="loc-left">
+            <div class="loc-heading">Prime Location, Premium Living <br> Welcome LA Mandre</div>
+            <img src="./images/location.webp" alt="">
+        </div>
+        <div class="loc-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8093.289064786881!2d73.73880731491596!3d15.661641176817053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfef725d535b21%3A0x7a300d42d2078240!2sLa%20Mandre%20by%20Yugen%20Infra!5e0!3m2!1sen!2sin!4v1748035476773!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Fotterrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+    <footer class="fcr-footer">
+        <div class="fcr-footer-container">
+            <!-- Logo + Info -->
+            <div class="fcr-footer-column">
+                <div class="fcr-footer-logo">
+                    YUGEN <span>INFRA</span>
+                </div>
+                <div class="fcr-footer-text">
+                    Timespro has been in the real estate broking business for the last 11 years, and V K Developers has been in the construction business for over 25 years.
+                </div>
+            </div>
+
+            <!-- Explore -->
+            <div class="fcr-footer-column">
+                <div class="fcr-footer-title">Explore</div>
+                <a href="#" class="fcr-footer-link">About Us</a>
+                <a href="#" class="fcr-footer-link">Gallery</a>
+                <a href="#" class="fcr-footer-link">Blog</a>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="fcr-footer-column">
+                <div class="fcr-footer-title">Quick Links</div>
+                <a href="#" class="fcr-footer-link">Home</a>
+                <a href="#" class="fcr-footer-link">Contact Us</a>
+                <a href="#" class="fcr-footer-link">Career</a>
+            </div>
+
+            <!-- Contact -->
+            <div class="fcr-footer-column">
+                <div class="fcr-footer-title">Contact</div>
+                <div class="fcr-footer-contact"><i>📞</i> +91 9090-9090-19</div>
+                <div class="fcr-footer-contact"><i>📧</i> sales@yugeninfra.com</div>
+                <div class="fcr-footer-contact">
+                    <i>📍</i> 12th floor M3M Cosmopolitan, Golf Course Ext Rd, Sector 66, Gurugram, Haryana 122002
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="fcr-footer-bottom">
+            Copyright©2025 <strong>Scaleacres</strong>. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <!-- POP UP Form -->
+    <div class="popup" id="popup-form">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="popup-image">
+                <img src="./images/ov3.png" alt="Villa" />
+            </div>
+            <div class="popup-form-area">
+                <h2>Limited Villas Available, <br> Reserve Yours Before It’s Gone</h2>
+                <form>
+                    <input type="text" placeholder="Name" required />
+                    <input type="email" placeholder="Email" required />
+                    <input type="tel" placeholder="Phone No." required />
+                    <button type="submit">ENQUIRE</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js
     "></script>
