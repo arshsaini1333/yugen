@@ -10,7 +10,7 @@ html body {
 
 .navbar {
     z-index: 3 !important;
-    background-color: rgba(0, 0, 0, 0.468) !important;
+    /* background-color: rgba(0, 0, 0, 0.735) !important; */
     background-color: transparent !important;
 }
 
@@ -19,17 +19,20 @@ html body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 5;
 }
 
 .navbar-nav a {
     font-size: 1.3rem;
     font-weight: 600;
+    /* color: white !important; */
     color: white !important;
 }
 
 .navbar-brand {
     width: 20%;
     text-align: right;
+    /* color: white; */
     color: white;
     font-size: 2rem;
     font-weight: 700;
@@ -45,6 +48,7 @@ html body {
 }
 
 .navbar-brand:hover {
+    /* color: white; */
     color: white;
     letter-spacing: 6px;
 }
@@ -64,6 +68,7 @@ html body {
 }
 
 .leftSide a:hover {
+    color: white;
     opacity: 1;
     transform: scale(1.02);
 }
@@ -84,7 +89,8 @@ html body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.735);
+    /* background-color: rgba(0, 0, 0, 0.735); */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082));
     z-index: 2;
 }
 
@@ -107,61 +113,51 @@ html body {
     }
 }
 
-.home-container {
-    height: 80vh;
+
+/* --------------Home------------------------- */
+
+.hero-container {
+    color: #fff;
+    /* min-height: 100vh; */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    justify-content: center;
-    padding: 0 1rem;
-    /* gap: 1rem; */
+    /* align-items: center; */
+    padding: 60px;
 }
 
-.home-heading {
-    color: white;
-    font-size: 4.5rem;
-    word-spacing: 1rem;
-    letter-spacing: 0.7rem;
-    font-weight: 900;
-    z-index: 5;
-    text-align: center;
+.hero-content {
+    z-index: 6;
+    margin-top: 2rem;
+    /* max-width: 550px; */
+    width: 45%;
+    /* background-color: rgba(0, 0, 0, 0.655); */
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.home-content {
-    z-index: 5;
-    color: white;
-    font-size: 1.5rem;
-    word-spacing: 0.4rem;
-    text-align: center;
+.hero-content h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
-.home-container button {
-    margin-top: 1.5rem;
-    border: none;
-    background-color: white;
-    color: black;
-    padding: 1rem 1.5rem;
-    border-radius: 1rem;
-    z-index: 5;
-    font-size: 1.1rem;
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
-.slide-text {
-    margin-top: 1rem;
-    z-index: 5;
-    font-size: 28px;
-    font-weight: bold;
-    /* color: red; */
-    color: red;
-    /* background: white; */
-    /* background-color: rgba(0, 0, 0, 0.146); */
-    padding: 10px 20px;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-    animation: scaleLoop 2s infinite ease-out;
-    cursor: pointer;
-    text-align: center;
+.highlight {
+    /* color: #cc0000;
+    color: white; */
+    background-color: rgba(255, 255, 255, 0.53);
+    padding: 2px 6px;
+    margin-left: 0.2rem;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #cc0000;
+    display: inline-block;
+    animation: scaleLoop 2s infinite ease-in-out;
 }
 
 @keyframes scaleLoop {
@@ -170,24 +166,80 @@ html body {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
-@media screen and (max-width:700px) {
-    .home-container {
-        justify-content: flex-start;
-        margin-top: 4rem;
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #ffC300;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+}
+
+.cta-button {
+    /* background-color: #00e0b8; */
+    background-color: #FFC300;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+
+/* .cta-button:hover {
+    background-color: #00c4a3;
+    box-shadow: 0 6px 20px rgba(0, 224, 184, 0.5);
+} */
+
+
+/* Fade-in animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    .home-heading {
-        font-size: 3rem;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    .home-content {
-        margin-top: 2rem !important;
-        font-size: 1rem;
+}
+
+@media screen and (max-width:850px) {
+    .background-slider {
+        height: auto;
     }
-    .slide-text {
-        width: 90%;
+    .hero-container {
+        padding: 0;
+    }
+    .hero-content {
+        margin-top: 0;
+        width: 100%;
     }
 }
 
@@ -201,20 +253,24 @@ html body {
     justify-content: center;
     /* align-items: flex-start; */
     align-items: center;
-    gap: 7rem;
+    column-gap: 7rem;
+    row-gap: 2rem;
 }
 
 .overview-content {
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
+    gap: 1rem;
 }
 
-.oc-head {
-    color: #008b8b;
-    letter-spacing: 0.5rem;
-    font-size: 3rem;
+.ov-head {
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+    color: #006666;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .oc-content {
@@ -285,9 +341,14 @@ html body {
     flex-shrink: 0;
 }
 
-.oc-button {
-    /* border: 2px solid black; */
-    border: none;
+
+/* .oc-button { */
+
+
+/* border: 2px solid black; */
+
+
+/* border: none;
     padding: 1rem 1.5rem;
     width: 12rem;
     border-radius: 2rem;
@@ -298,15 +359,31 @@ html body {
     word-spacing: 0.3rem;
     letter-spacing: 0.1rem;
     margin-top: 1rem;
+} */
+
+.oc-button {
+    display: inline-block;
+    background-color: #005b5b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    width: 12rem;
+    text-align: center;
 }
 
 @media screen and (max-width:700px) {
     .overview {
         flex-direction: column;
     }
-    .oc-head {
+    .ov-head {
         letter-spacing: 0.1rem;
         text-align: center;
+        font-size: 1.5rem;
     }
     .oc-carousel-container {
         width: 95%;
