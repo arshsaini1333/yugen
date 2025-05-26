@@ -232,14 +232,27 @@ html body {
 
 @media screen and (max-width:850px) {
     .background-slider {
-        height: auto;
+        /* height: auto; */
+        /* padding-bottom: 1rem; */
     }
     .hero-container {
         padding: 0;
     }
+    .hero-container h1 {
+        font-size: 2rem;
+    }
+    .hero-container h2 {
+        font-size: 1.5rem;
+    }
     .hero-content {
         margin-top: 0;
         width: 100%;
+    }
+    .highlight span {
+        margin-top: 0.2rem;
+    }
+    .cta-button {
+        font-size: 1.2rem;
     }
 }
 
