@@ -911,10 +911,13 @@ html body {
     font-size: 1.7rem;
     font-weight: 600;
     cursor: pointer;
-    color: white;
+    color: black;
 }
 
 @media (max-width: 768px) {
+    .close-btn {
+        color: white;
+    }
     .popup-form-area h2 {
         font-size: 1.1rem;
         color: red;
