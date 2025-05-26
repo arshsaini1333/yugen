@@ -936,3 +936,39 @@ html body {
         padding: 10px 20px;
     }
 }
+
+
+/* FAQS */
+
+.faq-section {
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    font-weight: bold;
+    color: #008b8b;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.accordion-button {
+    background-color: #004d4d;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #008b8b;
+    color: #fff;
+}
+
+.accordion-body {
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width:850px) {
+    .faq-section h2 {
+        font-size: 1.7rem;
+    }
+}
