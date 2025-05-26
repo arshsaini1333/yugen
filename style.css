@@ -239,17 +239,21 @@ html body {
         padding: 0;
     }
     .hero-container h1 {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     .hero-container h2 {
-        font-size: 1.5rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
     }
     .hero-content {
         margin-top: 0;
         width: 100%;
     }
+    .hero-content p {
+        font-size: 1rem;
+    }
     .highlight span {
-        margin-top: 0.2rem;
+        margin-top: 2rem;
     }
     .cta-button {
         font-size: 1.2rem;
@@ -425,26 +429,17 @@ html body {
 }
 
 .fc-head {
-    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    color: #004d4d;
+    margin-bottom: 20px;
     text-align: center;
-    color: #008b8b;
-    font-weight: 700;
-    word-spacing: 0.5rem;
-    font-size: 3rem;
-}
-
-.fc-subHead {
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
 }
 
 .fc-body {
     display: flex;
-    justify-content: space-around;
     align-items: flex-start;
-    margin-top: 3rem;
+    justify-content: space-around;
 }
 
 .fc {
@@ -481,18 +476,6 @@ html body {
     transform: scale(1);
 }
 
-.card-title {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 0 !important;
-}
-
 .fcr-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -512,22 +495,6 @@ html body {
 .fcr-feature-text {
     font-size: 16px;
     font-weight: 500;
-}
-
-@media screen and (max-width:950px) {
-    .fc-body {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        row-gap: 3rem;
-        margin-top: 2rem;
-    }
-    .fcr-features {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .card {
-        width: 110px;
-    }
 }
 
 .fc-book {
@@ -558,6 +525,31 @@ html body {
 .fc-book button:hover {
     background-color: #008b8b;
     color: white;
+}
+
+@media screen and (max-width:950px) {
+    .feature-container {
+        padding-bottom: 2rem;
+    }
+    .fc-body {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3rem;
+        margin-top: 2rem;
+    }
+    .fcr-features {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .card {
+        width: 110px;
+    }
+    .fc-book p {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -751,6 +743,9 @@ html body {
 @media screen and (max-width:620px) {
     .g-body {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .g-heading {
+        font-size: 2rem;
     }
     .g-card {
         width: 150px;
