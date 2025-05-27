@@ -948,8 +948,8 @@ html body {
 
 .location-body {
     display: flex;
-    gap: 2rem;
-    justify-content: space-around;
+    /* gap: 2rem; */
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -967,9 +967,8 @@ html body {
     width: 50%;
 }
 
-.loc-right iframe {
-    height: 400px;
-    width: 100%;
+.loc-right img {
+    width: 90%;
 }
 
 .loc-heading {
@@ -1011,14 +1010,11 @@ html body {
     .loc-right {
         width: 100%;
     }
-    .loc-right iframe {
-        height: 420px;
-    }
     .loc-left {
         width: 100%;
     }
     .location-body {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .loc-heading {
         font-size: 2rem;
