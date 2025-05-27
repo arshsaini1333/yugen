@@ -1160,3 +1160,123 @@ html body {
         font-size: 1.7rem;
     }
 }
+
+
+/* Conatct form */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+    width: 100%;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #008b8b;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-items: flex-start;
+    width: 75%;
+    gap: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.274);
+    /* background-color: #008b8b; */
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.form-img img {
+    height: 30rem;
+    width: 25rem;
+}
+
+.contact-form {
+    /* padding: 40px ; */
+    padding: 1rem;
+    border-radius: 20px;
+    color: #003b73;
+    /* text-align: center; */
+    transition: transform 0.3s ease;
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #cc0000;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border: 1.5px solid #d0d7de;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.contact-form input:focus {
+    border-color: #008b8b;
+    box-shadow: 0 0 8px rgba(0, 119, 182, 0.2);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.checkbox-group input {
+    margin-top: 4px;
+    margin-right: 10px;
+    accent-color: #008b8b;
+}
+
+.submit-btn {
+    /* background-color: #0077b6; */
+    background-color: #FFC300;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:850px) {
+    .contact-title {
+        font-size: 1.7rem;
+    }
+    .form-container {
+        flex-direction: column;
+    }
+    .form-container img {
+        width: 100%;
+        height: 27rem;
+    }
+    .contact-form {
+        padding: 0;
+    }
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+}

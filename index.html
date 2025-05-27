@@ -263,7 +263,7 @@
     </div>
     <div class="display">
         <p>Hurry Up! Only 3 Villas Left</p>
-        <button>Book Now</button>
+        <button onclick="openPopup()">Book Now</button>
     </div>
 
     <!-- Our Partnership -->
@@ -419,6 +419,32 @@
         </div>
     </div>
 
+    <!-- ----------------CONTACT FORM-------------------- -->
+
+    <div class="contact-container">
+        <div class="contact-title">Get in Touch with La Mandre, Goa</div>
+        <div class="form-container">
+            <div class="form-img">
+                <img src="./images/form1.jpg" alt="">
+            </div>
+            <form class="contact-form">
+                <h2>Only 3 Villas Left! Hurry UP</h2>
+                <input type="text" placeholder="Your Name" required />
+                <input type="tel" placeholder="Mobile No." required />
+                <input type="email" placeholder="Your Email" required />
+
+                <div class="checkbox-group">
+                    <input type="checkbox" required />
+                    <label>
+                    I agree and authorize team to contact me. This will override the registry with DNC / NDNC
+                  </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Enquire Now</button>
+            </form>
+        </div>
+    </div>
+
 
 
     <!-- Fotterrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
@@ -478,9 +504,9 @@
             <div class="popup-form-area">
                 <h2>Limited Villas Available, <br> Reserve Yours Before It’s Gone</h2>
                 <form>
-                    <input type="text" placeholder="Name" required />
-                    <input type="email" placeholder="Email" required />
-                    <input type="tel" placeholder="Phone No." required />
+                    <div><input type="text" placeholder="Name" required /></div>
+                    <div><input type="email" placeholder="Email" required /></div>
+                    <div><input type="tel" placeholder="Phone No." required /></div>
                     <button type="submit">ENQUIRE</button>
                 </form>
             </div>
