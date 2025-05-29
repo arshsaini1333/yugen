@@ -828,7 +828,7 @@ html body {
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     margin: auto;
-    padding: 24px;
+    padding: 2rem 2rem;
     align-items: flex-start;
     gap: 24px;
 }
@@ -864,7 +864,7 @@ html body {
 .badge {
     background-color: #f9fafb;
     /* border-left: 4px solid #3b82f6; */
-    border-left: 4px solid #ffC300;
+    border-left: 4px solid #008b8b;
     padding: 12px 14px;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -893,7 +893,8 @@ html body {
 
 .op-head {
     width: 100%;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-style: italic;
     color: #008b8b;
     font-weight: 800;
     text-align: center;
@@ -903,7 +904,7 @@ html body {
     font-size: 2rem;
     font-weight: 700;
     /* color: #004d4d; */
-    color: #ffC300;
+    color: #004d4d;
 }
 
 @media (min-width: 768px) {
@@ -1169,7 +1170,7 @@ html body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    column-gap: 1rem;
     padding: 3rem 1rem;
     width: 100%;
 }
@@ -1207,13 +1208,29 @@ html body {
     color: #003b73;
     /* text-align: center; */
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form h2 {
+    margin-left: 10px;
     margin-bottom: 25px;
     font-size: 2rem;
     font-weight: 700;
     color: #cc0000;
+    animation: displayH2 2s infinite ease;
+}
+
+@keyframes displayH2 {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .contact-form input[type="text"],
@@ -1268,6 +1285,7 @@ html body {
     }
     .form-container {
         flex-direction: column;
+        width: 100%;
     }
     .form-container img {
         width: 100%;
@@ -1279,4 +1297,20 @@ html body {
     .contact-form h2 {
         font-size: 1.5rem;
     }
+}
+
+
+/* Fotter */
+
+.footer {
+    width: 100%;
+    /* display: flex;
+justify-content: center;
+align-items: center; */
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    /* background-color: #003366; */
+    background-color: #008b8b;
+    color: white;
 }
