@@ -72,7 +72,7 @@ setAOSDurations(1500); // sets duration to 1.5 seconds
 
 // Handling Contact the form to send data 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxcU_Zf3KCG-fmWuDXGB4uNvoPoFUluJY4m5ffcXkgW2m7DmYwQbkrMCVfUdfOjgmMJ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzySNzFXyI_9LZgILRnRkHU6hx2bVS68SGEZQTwqpeiugsM5ZRfp2hsdibJL4m6_F22/exec';
 const message1 = document.getElementById('message')
 
 document.getElementById("myForm").addEventListener("submit", function(e) {
