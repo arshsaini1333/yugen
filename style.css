@@ -65,7 +65,6 @@ html body {
     justify-content: flex-end;
     column-gap: 2rem;
     align-items: center;
-    margin: 0 auto;
 }
 
 .leftSide a {
