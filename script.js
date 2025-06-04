@@ -150,3 +150,21 @@ document.getElementById("formpop").addEventListener("submit", function(e) {
             message2.style.color = "red";
         });
 });
+
+
+// Navbar
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const toggleButton = document.querySelector('.navbar-toggler');
+
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                // Simulate toggler click to close menu
+                toggleButton.click();
+            }
+        });
+    });
+});
