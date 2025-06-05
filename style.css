@@ -766,6 +766,7 @@ html body {
 }
 
 .gallry {
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -863,6 +864,9 @@ html body {
     /* .g-body {
         grid-template-columns: repeat(2, 1fr);
     } */
+    .gallry {
+        margin-top: 2rem;
+    }
     .g-card {
         width: 120px;
     }
@@ -889,7 +893,7 @@ html body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .op-container {
