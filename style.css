@@ -1503,3 +1503,80 @@ html body {
         font-size: 2.5rem;
     }
 }
+
+
+/* Amenties */
+
+.amen-section {
+    /* background: linear-gradient(135deg, #ffffff, #f0f0f0); */
+    /* padding: 60px 20px; */
+    padding: 3rem 1rem;
+}
+
+.amen-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.amen-title {
+    font-size: 3rem;
+    color: #008b8b;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.amen-grid {
+    padding: 0 1rem;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.2rem;
+}
+
+.amen-box {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.amen-icon {
+    width: 90%;
+    /* height: 5rem; */
+    height: 8rem;
+    /* object-fit: cover; */
+    margin-bottom: 15px;
+    transition: 0.5s all ease;
+}
+
+.amen-label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.amen-box:hover {
+    img {
+        /* transform: scale(1.1); */
+        width: 100%;
+    }
+}
+
+@media (max-width: 990px) {
+    .amen-title {
+        font-size: 1.7rem;
+    }
+    .amen-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .amen-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
